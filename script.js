@@ -3,7 +3,7 @@ const text = document.querySelector(".countDown");
 function countdown() {
   const now = new Date().getTime();
 
-  const countdownDate = new Date("October 30, 2024 8:00:00").getTime();
+  const countdownDate = new Date("October 30, 2024 18:00:00").getTime();
 
   const distanceBase = countdownDate - now;
 
@@ -19,7 +19,7 @@ function countdown() {
 
   const secondes = Math.floor((distanceBase % (1000 * 60)) / 1000);
 
-  text.innerText = `${month}Mois ${days}Jours ${hours}h ${minutes}m ${secondes}s`;
+  text.innerText = `${days}Jours ${hours}h ${minutes}m ${secondes}s`;
 }
 
 countdown();
