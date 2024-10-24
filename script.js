@@ -28,22 +28,4 @@ const countdownInterval = setInterval(() => {
   countdown();
 }, 1000);
 
-// Fonction pour incrémenter et afficher le compteur de visites
-function updateVisitCounter() {
-  let visits;
 
-  if (localStorage.getItem("visits")) {
-    visits = parseInt(localStorage.getItem("visits")) + 1;
-  } else {
-    visits = 1;
-  }
-
-  localStorage.setItem("visits", visits);
-
-  document.getElementById(
-    "visitCounter"
-  ).textContent = `Nombre de visites : ${visits}`;
-}
-
-// Appeler la fonction lorsque la page est chargée
-document.addEventListener("DOMContentLoaded", updateVisitCounter);
