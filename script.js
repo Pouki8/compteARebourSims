@@ -3,7 +3,7 @@ const text = document.querySelector(".countDown");
 function countdown() {
   const now = new Date().getTime();
 
-  const countdownDate = new Date("October 30, 2024 18:00:00").getTime();
+  const countdownDate = new Date("October 31, 2024 18:00:00").getTime();
 
   const distanceBase = countdownDate - now;
 
