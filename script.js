@@ -19,7 +19,7 @@ function countdown() {
 
   const secondes = Math.floor((distanceBase % (1000 * 60)) / 1000);
 
-  text.innerText = `${days}Jours ${hours}h ${minutes}m ${secondes}s`;
+  text.innerText = `${month}Mois ${days}Jours ${hours}h ${minutes}m ${secondes}s`;
 }
 
 countdown();
